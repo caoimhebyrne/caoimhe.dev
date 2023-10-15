@@ -25,6 +25,14 @@
     />
 
     <ProjectCard
+      name="KDiscordIPC"
+      description="A simple, yet powerful library for interacting with Discord through IPC."
+      logo="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+      href="https://github.com/SerenityOS/serenity"
+      tags={["Created by me", "Kotlin", "Coroutines"]}
+    />
+
+    <ProjectCard
       name="SerenityOS"
       description="An open source graphical Unix-like operating system written in C++."
       logo="https://raw.githubusercontent.com/SerenityOS/serenity/master/Base/www/ladyball.png"
