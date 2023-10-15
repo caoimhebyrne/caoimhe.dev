@@ -1,0 +1,9 @@
+{
+  "prettier.documentSelectors": ["**/*.svelte"],
+  "workbench.editor.labelFormat": "short",
+  "workbench.tree.indent": 16,
+  "explorer.compactFolders": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}
