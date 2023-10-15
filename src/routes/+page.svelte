@@ -4,7 +4,7 @@
   import Title from "$lib/components/typography/Title.svelte";
 </script>
 
-<main class="flex flex-col gap-8">
+<main class="flex flex-col gap-4">
   <section class="flex flex-col gap-2">
     <Title>Hi, I'm Caoimhe 👋</Title>
 
