@@ -7,7 +7,7 @@
   export let track: Promise<Track | undefined>;
 </script>
 
-<nav class="flex flex-row items-center justify-between">
+<nav class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-0">
   <div class="flex flex-row items-center gap-4 md:gap-6">
     <img class="aspect-square w-8 rounded-full" src="profile.webp" alt="My Logo" />
 

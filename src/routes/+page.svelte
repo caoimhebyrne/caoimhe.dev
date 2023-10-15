@@ -16,12 +16,19 @@
     </h2>
   </section>
 
-  <section class="grid grid-flow-col grid-cols-3">
+  <section class="grid gap-4 md:grid-flow-col md:grid-cols-2 lg:grid-cols-3">
     <ProjectCard
       name="Essential"
       description="Essential is a quality of life mod that boosts Minecraft Java to the next level."
       logo="https://static.essential.gg/icon/96x96.png"
       href="https://essential.gg"
+    />
+
+    <ProjectCard
+      name="SerenityOS"
+      description="An open source graphical Unix-like operating system written in C++."
+      logo="https://raw.githubusercontent.com/SerenityOS/serenity/master/Base/www/ladyball.png"
+      href="https://github.com/SerenityOS/serenity"
     />
   </section>
 </main>
