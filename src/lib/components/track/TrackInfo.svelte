@@ -10,7 +10,12 @@
   let containerClasses = "flex flex-row items-center gap-2 text-neutral-600 dark:text-neutral-400";
 </script>
 
-<div class={clsx(containerClasses, "rounded-lg bg-neutral-800 px-3 py-2 transition-opacity hover:opacity-70")}>
+<div
+  class={clsx(
+    containerClasses,
+    "rounded-lg bg-neutral-200 px-3 py-2 transition-opacity hover:opacity-70 dark:bg-neutral-800",
+  )}
+>
   {#await data}
     <Record />
     Loading...

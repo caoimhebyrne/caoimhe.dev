@@ -1,11 +1,10 @@
 <script>
   import ProjectCard from "$lib/components/ProjectCard.svelte";
-  import ArrowUpRight from "$lib/components/icons/ArrowUpRight.svelte";
   import InlineLink from "$lib/components/typography/InlineLink.svelte";
   import Title from "$lib/components/typography/Title.svelte";
 </script>
 
-<main class="flex flex-col gap-6">
+<main class="flex flex-col gap-8">
   <section class="flex flex-col gap-2">
     <Title>Hi, I'm Caoimhe 👋</Title>
 
@@ -22,6 +21,7 @@
       description="Essential is a quality of life mod that boosts Minecraft Java to the next level."
       logo="https://static.essential.gg/icon/96x96.png"
       href="https://essential.gg"
+      tags={["Developer", "Java", "Kotlin"]}
     />
 
     <ProjectCard
@@ -29,6 +29,7 @@
       description="An open source graphical Unix-like operating system written in C++."
       logo="https://raw.githubusercontent.com/SerenityOS/serenity/master/Base/www/ladyball.png"
       href="https://github.com/SerenityOS/serenity"
+      tags={["60+ commits", "C++"]}
     />
   </section>
 </main>
