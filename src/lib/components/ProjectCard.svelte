@@ -9,7 +9,7 @@
 </script>
 
 <div
-  class="flex flex-col gap-1 rounded-lg border-2 border-neutral-200 bg-neutral-100 p-4 dark:border-neutral-700 dark:bg-neutral-800"
+  class="flex flex-col gap-1 rounded-lg border-2 border-neutral-200 bg-neutral-100 p-4 dark:border-neutral-800 dark:bg-neutral-900"
 >
   <div class="flex flex-row items-center justify-between">
     <div class="flex flex-row items-center gap-2">
@@ -37,7 +37,7 @@
   <div class="flex flex-row gap-2 pt-1">
     {#each tags as tag}
       <div
-        class="cursor-default rounded-md bg-neutral-300 px-2 py-1 text-sm text-neutral-700 dark:bg-neutral-900 dark:text-neutral-400"
+        class="cursor-default rounded-md bg-neutral-300 px-2 py-1 text-sm text-neutral-700 dark:bg-neutral-800 dark:text-neutral-400"
       >
         <p>{tag}</p>
       </div>

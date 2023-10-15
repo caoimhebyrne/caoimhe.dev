@@ -13,7 +13,7 @@
 <div
   class={clsx(
     containerClasses,
-    "rounded-lg bg-neutral-200 px-3 py-2 transition-opacity hover:opacity-70 dark:bg-neutral-800",
+    "rounded-md border-2 border-neutral-800 bg-neutral-200 px-3 py-2 transition-opacity hover:opacity-70 dark:bg-neutral-900",
   )}
 >
   {#await data}
