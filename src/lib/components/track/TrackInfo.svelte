@@ -13,7 +13,7 @@
 <div
   class={clsx(
     containerClasses,
-    "rounded-md border-2 border-neutral-800 bg-neutral-200 px-3 py-2 transition-opacity hover:opacity-70 dark:bg-neutral-900",
+    "rounded-md border-2 border-neutral-200 bg-neutral-100 px-3 py-2 transition-opacity hover:opacity-70 dark:border-neutral-800 dark:bg-neutral-900",
   )}
 >
   {#await data}
@@ -25,12 +25,15 @@
 
       <a rel="noreferrer noopener" target="_blank" class={containerClasses} href={data.url}>
         {#if imageUrl}
-          <img class="aspect-square w-6 rounded-full" src={imageUrl} alt="Album art" />
+          <img class="aspect-square w-5 rounded-full" src={imageUrl} alt="Album art" />
         {:else}
           <Record />
         {/if}
 
-        {data.name} by {data.artist["#text"]}
+        <p class="line-clamp-1">
+          Listening to <span class="font-semibold">{data.name}</span> by
+          <span class="font-semibold">{data.artist["#text"]}</span>
+        </p>
       </a>
     {:else}
       <Record />

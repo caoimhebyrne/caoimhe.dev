@@ -1,6 +1,4 @@
 <script lang="ts">
-  import clsx from "clsx";
-
   export let href: string;
   export let external: boolean = false;
 </script>

@@ -24,7 +24,7 @@
       <a
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded-full p-1 text-neutral-700 transition-colors hover:bg-neutral-50 dark:text-neutral-200 dark:hover:bg-neutral-700"
+        class="rounded-full p-1 text-neutral-700 transition-colors hover:bg-neutral-300 dark:text-neutral-200 dark:hover:bg-neutral-700"
         {href}
       >
         <ArrowUpRight class="h-4 w-4" />
