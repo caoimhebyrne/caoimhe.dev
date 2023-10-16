@@ -28,7 +28,7 @@
       name="KDiscordIPC"
       description="A simple, yet powerful library for interacting with Discord through IPC."
       logo="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-      href="https://github.com/SerenityOS/serenity"
+      href="https://github.com/caoimhebyrne/KDiscordIPC"
       tags={["Created by me", "Kotlin", "Coroutines"]}
     />
 
