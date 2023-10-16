@@ -1,5 +1,7 @@
 <script lang="ts">
   import type { Track } from "$lib/lastfm/types";
+  import GitHub from "../icons/GitHub.svelte";
+  import XLogo from "../icons/XLogo.svelte";
 
   import TrackInfo from "../track/TrackInfo.svelte";
   import NavigationLink from "./NavigationLink.svelte";
@@ -15,5 +17,15 @@
     <!-- <NavigationLink href="/blog">Blog</NavigationLink> -->
   </div>
 
-  <TrackInfo data={track} />
+  <div class="flex flex-row items-center gap-4 md:gap-6">
+    <NavigationLink href="https://x.com/caoimhedev_" external>
+      <XLogo class="h-5 w-5" />
+    </NavigationLink>
+
+    <NavigationLink href="https://github.com/caoimhebyrne" external>
+      <GitHub class="h-5 w-5" />
+    </NavigationLink>
+
+    <TrackInfo data={track} />
+  </div>
 </nav>
