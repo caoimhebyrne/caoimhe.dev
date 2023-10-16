@@ -6,6 +6,8 @@
 
 <head>
   <title>Caoimhe Byrne</title>
+  <meta name="description" content="I'm a 17 year-old software developer from Ireland." />
+
   <meta property="og:title" content="Caoimhe Byrne" />
   <meta property="og:description" content="I'm a 17 year-old software developer from Ireland." />
   <meta property="og:type" content="website" />

@@ -17,11 +17,12 @@
         <img class="w-5 rounded-md" src={logo} alt="Essential Logo" />
       {/if}
 
-      <h5 class="text-lg font-medium text-neutral-700 dark:text-neutral-200">{name}</h5>
+      <h3 class="text-lg font-medium text-neutral-700 dark:text-neutral-200">{name}</h3>
     </div>
 
     {#if href}
       <a
+        aria-label={`See more about ${name}`}
         target="_blank"
         rel="noopener noreferrer"
         class="rounded-full p-1 text-neutral-700 transition-colors hover:bg-neutral-300 dark:text-neutral-200 dark:hover:bg-neutral-700"
