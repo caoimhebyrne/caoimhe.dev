@@ -29,7 +29,7 @@
     <ProjectCard
       name="Essential"
       description="Essential is a quality of life mod that boosts Minecraft Java to the next level."
-      logo="https://static.essential.gg/icon/96x96.png"
+      logo="essential.webp"
       href="https://essential.gg"
       tags={["Developer", "Java", "Kotlin"]}
     />
@@ -37,7 +37,7 @@
     <ProjectCard
       name="KDiscordIPC"
       description="A simple, yet powerful library for interacting with Discord through IPC."
-      logo="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+      logo="github.webp"
       href="https://github.com/caoimhebyrne/KDiscordIPC"
       tags={["Created by me", "Kotlin", "Coroutines"]}
     />
@@ -45,7 +45,7 @@
     <ProjectCard
       name="SerenityOS"
       description="An open source graphical Unix-like operating system written in C++."
-      logo="https://raw.githubusercontent.com/SerenityOS/serenity/master/Base/www/ladyball.png"
+      logo="serenityos.webp"
       href="https://github.com/SerenityOS/serenity"
       tags={["60+ commits", "C++"]}
     />
