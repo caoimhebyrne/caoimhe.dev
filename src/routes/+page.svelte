@@ -4,6 +4,14 @@
   import Title from "$lib/components/typography/Title.svelte";
 </script>
 
+<head>
+  <title>Caoimhe Byrne</title>
+  <meta property="og:title" content="Caoimhe Byrne" />
+  <meta property="og:description" content="I'm a 17 year-old software developer from Ireland." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://caoimhe.dev/favicon.webp" />
+</head>
+
 <main class="flex flex-col gap-4">
   <section class="flex flex-col gap-2">
     <Title>Hi, I'm Caoimhe 👋</Title>
