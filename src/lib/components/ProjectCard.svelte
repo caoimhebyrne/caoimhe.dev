@@ -14,7 +14,7 @@
   <div class="flex flex-row items-center justify-between">
     <div class="flex flex-row items-center gap-2">
       {#if logo}
-        <img class="w-5 rounded-md" src={logo} alt="Essential Logo" />
+        <img width="20px" height="20px" class="w-5 rounded-md" src={logo} alt="Essential Logo" />
       {/if}
 
       <h3 class="text-lg font-medium text-neutral-700 dark:text-neutral-200">{name}</h3>
