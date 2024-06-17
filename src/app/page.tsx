@@ -1,6 +1,5 @@
 import Link from "@/components/Link";
-import Essential from "@/components/icons/Essential";
-import GitHub from "@/components/icons/GitHub";
+import { Essential, GitHub, Email, X } from "@/components/icons";
 
 export default function Home() {
     return (
@@ -35,6 +34,37 @@ export default function Home() {
                         , where we are building a quality-of-life mod that
                         boosts Minecraft: Java Edition to the next level.
                     </p>
+                </div>
+
+                <div className="flex flex-row items-center gap-4">
+                    <button
+                        title="Copy email address"
+                        type="button"
+                        className="p-1 transition-all active:scale-90 hover:text-blue-500"
+                        // todo: copy email address to clipboard, should be a client component.
+                        //       maybe the client component should *fetch* the email from a server action?
+                        //       that way, bots won't be able to get the email without actually interacting with the website.
+                    >
+                        <Email className="size-6" />
+                    </button>
+
+                    <a
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="-ml-1 p-1 transition-all active:scale-90 hover:text-blue-500"
+                        href="https://github.com/caoimhebyrne"
+                    >
+                        <GitHub className="size-5" />
+                    </a>
+
+                    <a
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="p-1 transition-all active:scale-90 hover:text-blue-500"
+                        href="https://x.com/caoimhedev_"
+                    >
+                        <X className="size-[18px]" />
+                    </a>
                 </div>
             </section>
 

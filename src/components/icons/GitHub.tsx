@@ -5,7 +5,7 @@ export default function GitHub({ className }: { className: string }) {
             viewBox="0 0 98 96"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <title>GitHub Icon</title>
+            <title>GitHub</title>
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"
