@@ -31,3 +31,25 @@
         @apply font-medium text-neutral-950 dark:text-neutral-100;
     }
 }
+
+.hand-wave {
+    animation-name: hand-wave;
+    animation-duration: 2.25s;
+    animation-iteration-count: infinite;
+
+    /** Tells the animation to transform around the bottom of the hand. */
+    transform-origin: 70% 70%;
+
+    /** Not sure why this is needed, but the animation won't play correctly without it. */
+    display: inline-block;
+}
+
+@keyframes hand-wave {
+    0% { transform: rotate(0.0deg) }
+    10% { transform: rotate(12.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(12.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(8.0deg) }
+    60% { transform: rotate( 0.0deg) }
+}

@@ -7,7 +7,9 @@ export default function Home() {
         <>
             <section className="flex flex-col gap-4">
                 <div>
-                    <h1>Hi, I'm Caoimhe 👋</h1>
+                    <h1>
+                        Hi, I'm Caoimhe <span className="hand-wave">👋</span>
+                    </h1>
                     <h2>Java & Kotlin developer from Ireland</h2>
                 </div>
 
