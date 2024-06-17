@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/** Used for configuring fonts and text colors */
+@layer base {
+    h1 {
+        @apply font-bold text-2xl dark:text-white;
+    }
+
+    h2, h3 {
+        @apply font-mono font-semibold text-lg;
+    }
+
+    /** All elements should have a default text color of this, if not set to be otherwise. */
+    body {
+        @apply text-neutral-700 dark:text-neutral-300;
+    }
+
+    h3 {
+        @apply text-neutral-900 dark:text-neutral-100;
+    }
+
+    h4 {
+        @apply font-medium font-mono text-neutral-900 dark:text-neutral-100;
+    }
+}
+
+@layer components {
+    .emphasised {
+        @apply font-medium text-neutral-950 dark:text-neutral-100;
+    }
+}
