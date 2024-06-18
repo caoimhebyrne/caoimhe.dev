@@ -8,7 +8,7 @@ async function NowPlayingContent() {
 
         return (
             <a
-                className="flex max-w-full flex-row items-center gap-2 transition-all lg:max-w-[80%] hover:text-blue-500"
+                className="flex max-w-[90%] flex-row items-center gap-2 transition-all lg:max-w-full hover:text-blue-500"
                 href={track.url ?? "https://last.fm/caoimhereal"}
                 target="_blank"
                 rel="noreferrer noopener"
