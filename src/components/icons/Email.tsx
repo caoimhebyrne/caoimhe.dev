@@ -1,5 +1,9 @@
-export default function Email({ className }: { className: string }) {
+export default function Email({
+    className,
+    removeTitleElement,
+}: { className: string; removeTitleElement?: boolean }) {
     return (
+        // biome-ignore lint/a11y/noSvgWithoutTitle: It's conditional based on what the caller wants.
         <svg
             className={className}
             xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +12,7 @@ export default function Email({ className }: { className: string }) {
             stroke="currentColor"
             fill="none"
         >
-            <title>Email</title>
+            {!removeTitleElement && <title>Email</title>}
             <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
