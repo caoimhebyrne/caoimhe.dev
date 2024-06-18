@@ -28,7 +28,7 @@ export default function Link({ href, style, children, className }: LinkProps) {
         <a
             href={href}
             className={clazz(
-                "inline-flex flex-row items-center gap-2 rounded-md py-2 transition-all hover:px-3",
+                "inline-flex flex-row items-center gap-2 rounded-md py-2 transition-all active:scale-95 hover:px-3",
                 styles[style],
                 className,
             )}
