@@ -8,13 +8,13 @@ async function NowPlayingContent() {
 
         return (
             <a
-                className="flex max-w-[90%] flex-row items-center gap-2 transition-all lg:max-w-full hover:text-blue-500"
+                className="flex w-full flex-row items-center gap-2 font-mono text-sm transition-all md:w-auto md:min-w-0 hover:text-blue-500"
                 href={track.url ?? "https://last.fm/caoimhereal"}
                 target="_blank"
                 rel="noreferrer noopener"
                 title={`${track.name} on Last.FM`}
             >
-                <p className="max-w-full overflow-hidden text-ellipsis whitespace-nowrap text-sm">
+                <p className="flex-1 truncate">
                     {track.name} by {track.artist["#text"]}
                 </p>
 
@@ -28,10 +28,8 @@ async function NowPlayingContent() {
 
 export default async function NowPlaying() {
     return (
-        <div className="font-mono">
-            <Suspense fallback={<p>Loading...</p>}>
-                <NowPlayingContent />
-            </Suspense>
-        </div>
+        <Suspense fallback={<p className="font-mono text-sm">Loading...</p>}>
+            <NowPlayingContent />
+        </Suspense>
     );
 }

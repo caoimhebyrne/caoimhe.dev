@@ -11,6 +11,7 @@ export default function Home() {
                     <h1>
                         Hi, I'm Caoimhe <span className="hand-wave">👋</span>
                     </h1>
+
                     <h2>Java & Kotlin developer from Ireland</h2>
                 </div>
 
@@ -38,7 +39,7 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+                <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between md:gap-8">
                     <div className="flex flex-row items-center gap-4">
                         <CopyEmailButton />
 
