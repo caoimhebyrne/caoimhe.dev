@@ -1,5 +1,6 @@
 import CopyEmailButton from "@/components/CopyEmailButton";
 import Link from "@/components/Link";
+import NowPlaying from "@/components/NowPlaying";
 import { Essential, GitHub, X } from "@/components/icons";
 
 export default function Home() {
@@ -37,26 +38,30 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="flex flex-row items-center gap-4">
-                    <CopyEmailButton />
+                <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
+                    <div className="flex flex-row items-center gap-4">
+                        <CopyEmailButton />
 
-                    <a
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        className="-ml-1 p-1 transition-all active:scale-90 hover:text-blue-500"
-                        href="https://github.com/caoimhebyrne"
-                    >
-                        <GitHub className="size-5" />
-                    </a>
+                        <a
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="-ml-1 p-1 transition-all active:scale-90 hover:text-blue-500"
+                            href="https://github.com/caoimhebyrne"
+                        >
+                            <GitHub className="size-5" />
+                        </a>
 
-                    <a
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        className="p-1 transition-all active:scale-90 hover:text-blue-500"
-                        href="https://x.com/caoimhedev_"
-                    >
-                        <X className="size-[18px]" />
-                    </a>
+                        <a
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="p-1 transition-all active:scale-90 hover:text-blue-500"
+                            href="https://x.com/caoimhedev_"
+                        >
+                            <X className="size-[18px]" />
+                        </a>
+                    </div>
+
+                    <NowPlaying />
                 </div>
             </section>
 
