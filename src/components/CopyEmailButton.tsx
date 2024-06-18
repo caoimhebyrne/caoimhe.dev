@@ -8,19 +8,26 @@ const EMAIL_ADDRESS: string = "me@caoimhe.dev";
 
 export default function CopyEmailButton() {
     const showCopiedToast = () => {
-        toast.success("Copied email address to clipboard!");
+        toast.success("Copied email address to clipboard!", {
+            id: "clipboard-success",
+        });
     };
 
     const showErrorToast = (reason: unknown) => {
-        console.error("Failed to copy content to clipboard:", reason);
-        toast.error("Failed to copy email address to clipboard.");
+        toast.error(`Failed to copy \`${EMAIL_ADDRESS}\` to clipboard.`, {
+            id: "clipboard-failed",
+        });
+
+        console.error("Failed to copy email address to clipboard.", reason);
     };
 
-    const onClick = (_: MouseEvent<HTMLButtonElement>) => {
-        navigator.clipboard
-            .writeText(EMAIL_ADDRESS)
-            .then(showCopiedToast)
-            .catch(showErrorToast);
+    const onClick = async (_: MouseEvent<HTMLButtonElement>) => {
+        try {
+            await navigator.clipboard.writeText(EMAIL_ADDRESS);
+            showCopiedToast();
+        } catch (e) {
+            showErrorToast(e);
+        }
     };
 
     return (
