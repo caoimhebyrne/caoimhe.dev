@@ -1,7 +1,10 @@
 import lastfmService from "@/lib/lastfm";
+import { unstable_noStore } from "next/cache";
 import { Suspense } from "react";
 
 export function NowPlaying() {
+  unstable_noStore();
+
   return (
     <Suspense fallback={<p>loading...</p>}>
       <NowPlayingContent />
