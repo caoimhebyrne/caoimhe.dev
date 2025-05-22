@@ -20,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`${jetbrainsMono.variable} flex min-h-screen flex-col font-mono antialiased`}
+        className={`${jetbrainsMono.variable} flex min-h-screen flex-col font-mono text-sm antialiased md:text-base`}
       >
         <header className="border-border border-b">
           <section className="mx-auto border-border px-3 py-2 md:w-2/3 md:border-x md:px-6 md:py-4 xl:w-1/2 2xl:w-3/8">

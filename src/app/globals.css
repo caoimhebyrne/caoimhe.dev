@@ -7,7 +7,7 @@
   --primary: var(--color-purple-500);
   --secondary: var(--color-amber-500);
 
-  --border: var(--color-neutral-200);
+  --border: var(--color-neutral-300);
 }
 
 @media (prefers-color-scheme: dark) {

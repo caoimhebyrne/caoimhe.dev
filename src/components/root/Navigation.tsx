@@ -9,9 +9,7 @@ export default function Navigation() {
           alt="A hand-drawn image of a girl with brown hair"
         />
 
-        <p className="font-bold font-mono text-sm md:text-base">
-          Caoimhe Byrne
-        </p>
+        <p className="font-bold">Caoimhe Byrne</p>
       </div>
     </section>
   );
