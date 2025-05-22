@@ -1,3 +1,28 @@
 export default function Home() {
-  return <h1 className="font-bold text-2xl">Hello!</h1>;
+  return (
+    <section className="flex flex-col gap-2">
+      <h1 className="font-bold font-mono text-lg text-primary md:text-xl">
+        ~ hi, i'm caoimhe! <span className="text-secondary">(she/her)</span>
+      </h1>
+
+      <p className="text-sm md:text-base">
+        welcome to my website! i'm a software developer from ireland with
+        experience in languages like java, kotlin, and typescript.
+      </p>
+
+      <p className="text-sm md:text-base">
+        at the moment, i'm a member of the infrastructure team at{" "}
+        <a
+          rel="noreferrer"
+          target="_blank"
+          className="text-blue-500"
+          href="https://essential.gg"
+        >
+          essential
+        </a>
+        , where we're building a mod for minecraft that enhances the vanilla
+        gameplay experience.
+      </p>
+    </section>
+  );
 }
