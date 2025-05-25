@@ -28,6 +28,7 @@ const getRecentTracks: (username: string) => Promise<Track | null> = cache(
     try {
       const response = await fetch(
         `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${process.env.LASTFM_API_KEY}&format=json`,
+        { next: { revalidate: 300 } },
       );
 
       if (!response.ok) {
